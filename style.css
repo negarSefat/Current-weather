@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "poppins";
+  src: url(./font/Poppins-Regular.ttf) format(trueType);
+}
+@font-face {
+  font-family: "bold poppins";
+  src: url(./font/Poppins-Bold.ttf) format(trueType);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins";
+  background-image: url(./media/370723-clouds.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.display {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 2s;
+}
+.weatherBox {
+  background-color: rgba(254, 254, 254, 0.2);
+  width: 300px;
+  /* height: 400px; */
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  backdrop-filter: blur(3px);
+  box-shadow: 2px 2cqmin 10px 2px rgb(117, 113, 113);
+}
+
+.weatherBox input {
+  border: none;
+  border-radius: 12px;
+  background: #e7dbe4;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(72, 13, 72);
+}
+
+.weatherBox input:focus {
+  outline: none;
+}
+
+.weatherBox input::placeholder {
+  font-family: "poppins";
+  font-size: 12px;
+  color: rgb(138, 129, 137);
+}
+
+.weatherBox p {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.country {
+  color: rgb(143, 28, 91);
+}
+
+.date {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tempr {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: rgba(193, 138, 187, 0.192);
+  border-radius: 20px;
+  margin: 30px auto 20px auto;
+}
+
+.tempPicture {
+  width: 70px;
+  height: 70px;
+  margin-left: 25px;
+}
+
+.tempreture {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(98, 33, 83);
+}
+
+.description {
+  font-size: 13px !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+.d-title {
+  color: rgb(173, 16, 113);
+  font-weight: bolder;
+}
+
+.min-max {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.msg {
+  background-color: rgba(255, 255, 255, 0.523);
+  color: rgb(55, 3, 55);
+  height: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 0 0 10px 10px;
+}
+
+.btn {
+  background-color: rgb(217, 152, 217);
+  width: 100px;
+  padding: 8px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-family: "poppins";
+  font-size: 14px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="weatherBox">
+        <input
+          class="inputEl"
+          type="text"
+          placeholder="Enter the Country / city name:"
+        />
+        <div class="display">
+          <div>
+            <p>Weather in <span class="country"></span></p>
+          </div>
+          <div class="date"></div>
+          <div class="tempr">
+            <img src="" alt="" class="tempPicture" />
+            <span class="tempreture"></span>
+          </div>
+          <div class="description">
+            <span class="d-title">description: </span>
+            <span class="description-text"></span>
+          </div>
+          <div class="min-max">
+            <span class="minMax"></span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
